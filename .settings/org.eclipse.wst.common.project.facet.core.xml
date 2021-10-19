@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faceted-project>
+  <runtime name="_Applications_Eclipse_2021-03.app_Contents_tomcat_9"/>
+  <fixed facet="jst.web"/>
+  <fixed facet="java"/>
+  <fixed facet="wst.jsdt.web"/>
+  <installed facet="java" version="11"/>
+  <installed facet="jst.web" version="4.0"/>
+  <installed facet="wst.jsdt.web" version="1.0"/>
+</faceted-project>
