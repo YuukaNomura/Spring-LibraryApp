@@ -25,10 +25,10 @@ jobs:
             java-version: '16'
 
       - name: Maven purge
-        run: mvn dependency:purge-local-repository -DreResolve=false -f ./Spring-KakeiboApp/pom.xml
+        run: mvn dependency:purge-local-repository -DreResolve=false -f ./pom.xml
 
       - name: Build and Test with Maven
-        run: mvn clean package -f ./Spring-KakeiboApp/pom.xml
+        run: mvn clean package -f ./pom.xml
 
 
 
