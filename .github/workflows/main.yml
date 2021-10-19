@@ -1,4 +1,4 @@
-name: springapp
+name: CI-Spring-KakeiboApp
 
 # ワークフローをいつ実行するかを制御
 on:
