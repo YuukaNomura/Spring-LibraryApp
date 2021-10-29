@@ -39,7 +39,6 @@ jobs:
           username: ${{ secrets.DOCKRHUB_USERNAME }}
           password: ${{ secrets.DOCKRHUB_TOKEN }}
 
-      # BuildKitの有効化
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
        
