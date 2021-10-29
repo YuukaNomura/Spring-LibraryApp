@@ -26,10 +26,19 @@
 	<bean id="dataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="org.postgresql.Driver" />
+		
+		<!-- ローカル -->
 		<!-- <property name="url" value="jdbc:postgresql://localhost:5432/kakeibo" /> -->
 		<!-- <property name="username" value="nao" /> -->
 		<!-- <property name="password" value="pass" /> -->
+		
+		<!-- 自端末 -->
 		<property name="url" value="jdbc:postgresql://database-1.cjwqk1qko8k9.us-east-2.rds.amazonaws.com:5432/kakeibo" />
+		<property name="username" value="postgres" />
+		<property name="password" value="Nao510428" />
+		
+		<!-- ITA端末 -->
+		<property name="url" value="jdbc:postgresql://javaarchitect-taki.co082efz6cnk.ap-northeast-1.rds.amazonaws.com:5432/kakeibodb" />
 		<property name="username" value="postgres" />
 		<property name="password" value="Nao510428" />
 	</bean>
