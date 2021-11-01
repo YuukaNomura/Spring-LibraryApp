@@ -12,7 +12,7 @@
 </head>
 <body>
 	<br>
-	<h2>家計簿アプリ</h2><br>
+	<h2>家計簿アプリ★</h2><br>
 	
 	
 	<spring:url value="/login" var="url" htmlEscape="true" />
