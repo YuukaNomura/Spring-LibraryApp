@@ -20,10 +20,10 @@ public class UserService {
 	public int checkLogin(User u) {
 			
 		int userID = 0;
-		User user = userDao.getUser(u.getUserID());
+		User user = userDao.getUser(u.getId());
 				
-		if(user != null && u.getUserPassword().equals(user.getUserPassword())) {
-			userID = u.getUserID();
+		if(user != null && u.getPass().equals(user.getPass())) {
+			userID = u.getId();
 		} 
 		return userID;
 	}
