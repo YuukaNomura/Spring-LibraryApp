@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="styles.css" type="text/css">
 </head>
 <body>
-	<br>
+<!--	<br>
 	<h2>家計簿アプリ★</h2><br>
 	
 	
@@ -26,7 +26,36 @@
 		
 		<input type="reset" value="クリア">
 		<input type="submit" value="ログイン" />
-	</form:form>
+	</form:form> -->
+	
+<div class="header"><br/>蔵書管理システム</div>
+	<spring:url value="/login" var="url" htmlEscape="true" />
+	<form:form action="${url}" method="POST">
+		<input type="hidden" name="viewId" value="login">
+
+<div class="warning" style="display:<%=flagMsg %>"><%=request.getAttribute("Msg") %></div>
+<table border="0">
+<tbody>
+   <tr>
+     <td><label for="id">ID</label></td>
+     <td><input required type="text" name="id"></td>
+   </tr>
+   <tr>
+     <td><label for="pass">パスワード</label></td>
+     <td><input required type="password" name="pass"></td>
+   </tr>
+   <tr>
+     <td></td>
+     <td></td>
+   </tr>
+   <tr>
+     <td></td>
+     <td><input type="submit" name="next" class="Button-style" value="ログイン"></td>
+   </tr>
+</tbody>
+</table>
+
+</form>
 	
 </body>
 </html>
