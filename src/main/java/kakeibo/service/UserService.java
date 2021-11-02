@@ -25,7 +25,7 @@ public class UserService {
 		if(user != null && u.getPass().equals(user.getPass())) {
 			userID = u.getId();
 		} 
-		return userID;
+		return user;
 	}
 
 }
