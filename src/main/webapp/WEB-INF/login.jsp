@@ -7,8 +7,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>ログイン</title>
-<link rel="stylesheet" href="styles.css" type="text/css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/common.css">
+<title>蔵書管理システム</title>
 </head>
 <body>
 <!--	<br>
