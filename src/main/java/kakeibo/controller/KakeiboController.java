@@ -57,9 +57,9 @@ public class KakeiboController {
 	}
 
 	@PostMapping("/login")
-	public String loginPost(@ModelAttribute User user, Model model) {
+	public String loginPost(/*@ModelAttribute User user, */Model model) {
 		return "input";
-		
+/*		
 		int userID = userService.checkLogin(user);
 
 		if (userID != 0) {
@@ -75,7 +75,7 @@ public class KakeiboController {
 			
 		} else {
 			return "login";
-		}
+		}*/
 	}
 	
 	
