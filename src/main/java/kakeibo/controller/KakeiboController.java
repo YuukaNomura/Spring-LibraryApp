@@ -77,7 +77,7 @@ public class KakeiboController {
 			
 		} else {
 			return "login";
-		}*/
+		}
 	}
 	
 	
