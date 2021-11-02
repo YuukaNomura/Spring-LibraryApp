@@ -7,7 +7,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/common.css">
+	<link rel="stylesheet" href="common.css" type="text/css">
+
+	<!--<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/common.css"> -->
 <title>蔵書管理システム</title>
 </head>
 <body>
