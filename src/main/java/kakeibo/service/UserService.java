@@ -17,9 +17,9 @@ public class UserService {
 
 	//ログインチェック
 	@Transactional(readOnly = true)
-	public int checkLogin(User u) {
+	public String checkLogin(User u) {
 			
-		int userID = 0;
+		String userID = null;
 		User user = userDao.getUser(u.getId());
 				
 		if(user != null && u.getPass().equals(user.getPass())) {
