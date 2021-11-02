@@ -45,5 +45,5 @@ jobs:
       # コンテナビルド＆格納
       - name: Build and push 
         run: |
-          docker build -t n148/springapp:latest . 
-          docker push n148/springapp:latest
+          docker build -t yuuka65/springapp:latest . 
+          docker push yuuka65/springapp:latest
