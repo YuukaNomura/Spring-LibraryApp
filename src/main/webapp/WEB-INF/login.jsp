@@ -31,9 +31,6 @@
 <div class="header"><br/>蔵書管理システム</div>
 	<spring:url value="/login" var="url" htmlEscape="true" />
 	<form:form action="${url}" method="POST">
-		<input type="hidden" name="viewId" value="login">
-<!--
-<div class="warning" style="display:<%=flagMsg %>"><%=request.getAttribute("Msg") %></div> -->
 <table border="0">
 <tbody>
    <tr>
