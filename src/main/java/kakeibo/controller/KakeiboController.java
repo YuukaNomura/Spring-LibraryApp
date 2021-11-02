@@ -58,6 +58,7 @@ public class KakeiboController {
 
 	@PostMapping("/login")
 	public String loginPost(@ModelAttribute User user, Model model) {
+		return "input";
 		
 		int userID = userService.checkLogin(user);
 
