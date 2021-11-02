@@ -63,7 +63,7 @@ public class KakeiboController {
 		User LoginUser = userService.checkLogin(user);
 		LoginUser.setPass("");
 
-		if (userID != null) {
+		if (LoginUser != null) {
 			
 			//ArrayList<Category> categoryList = new ArrayList<Category>();
 			//categoryList = categoryService.getCategory();
