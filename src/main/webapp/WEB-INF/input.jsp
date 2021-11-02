@@ -113,9 +113,9 @@ th.searchResult:first-child, td.searchResult:first-child{
 </form:form>&nbsp;</div>
 <div class="header">操作選択</div>
 
-<p>ログイン： ユーザ１ さん</p>
+<p>ログイン： <%=session.getAttribute("LoginUserName")%>さん</p>
+	
 <table border="0">
-
 <tbody>
    <tr>
      <td><div class="sub">蔵書管理</div></td>
