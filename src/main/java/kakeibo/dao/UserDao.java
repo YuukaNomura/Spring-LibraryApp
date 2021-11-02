@@ -23,7 +23,8 @@ public class UserDao {
 		User user = new User();*/
 		
 		final String sql = "select * from user where id=?;";
-		Map<String, Object> oneUser = jdbcTemplate.queryForMap(sql, userId);
+		//Map<String, Object> oneUser = jdbcTemplate.queryForMap(sql, userId);
+		Map<String, String> oneUser = jdbcTemplate.queryForMap(sql, userId);
 		User resultUser = null;	
 		
 		if(oneUser!=null) {
