@@ -16,14 +16,21 @@ public class UserDao {
 
 	//ユーザー取得
 	public User getUser(int userId)  {
-		String sql = "SELECT * FROM users WHERE userid = ?";
+		
+/*		String sql = "SELECT * FROM users WHERE userid = ?";
 		Map<String, Object> oneUser = jdbcTemplate.queryForMap(sql, userId);
 
-		User user = new User();
+		User user = new User();*/
+		
+		final String SQL = "select * from user where id=?;";
+		Map<String, Object> oneUser = jdbcTemplate.queryForMap(sql, userId);
+		User resultUser = null;	
+		
 		if(oneUser!=null) {
-			user.setUserID((int) oneUser.get("userid"));
-			user.setUserPassword((String) oneUser.get("userpassword"));
+			resultUser = new User(oneUser.get("id"), oneUser.get("pass"),oneUser.get("name"));
+			//user.setUserID((int) oneUser.get("userid"));
+			//user.setUserPassword((String) oneUser.get("userpassword"));
 		}
-        return user;
+        return resultUser;
 	}
 }
