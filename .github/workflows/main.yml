@@ -31,7 +31,6 @@ jobs:
         run: mvn clean package -f ./pom.xml
 
 
-
        # DockerHub ログイン
       - name: Login to DockerHub
         uses: docker/login-action@v1
