@@ -57,19 +57,21 @@ public class KakeiboController {
 	}
 
 	@PostMapping("/login")
-	public String loginPost(/*@ModelAttribute User user, */Model model) {
+	public String loginPost(@ModelAttribute User user, Model model) {
 		return "input";
-/*		
-		int userID = userService.checkLogin(user);
+		
+		User LoginUser = userService.checkLogin(user);
+		LoginUser.setPass("");
 
-		if (userID != 0) {
+		if (userID != null) {
 			
-			ArrayList<Category> categoryList = new ArrayList<Category>();
-			categoryList = categoryService.getCategory();
-			model.addAttribute("categoryList", categoryList);
+			//ArrayList<Category> categoryList = new ArrayList<Category>();
+			//categoryList = categoryService.getCategory();
+			//model.addAttribute("categoryList", categoryList);
 			
-			session.setAttribute("userID", userID);
-			session.setAttribute("categoryList", categoryList);
+			session.setAttribute("userID", LoginUser.getId());
+			session.setAttribute("LoginUserName", LoginUser.getName());
+			//session.setAttribute("categoryList", categoryList);
 
 			return "input";
 			
