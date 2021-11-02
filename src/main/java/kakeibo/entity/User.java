@@ -81,8 +81,9 @@ public class User {
 	 * 文字列化
 	 * @return 文字列
 	 */
+	/*
 	@Override
 	public String toString() {
 		return "User[userId : " + this.id + ", pass : " + this.pass + ", userName : " + this.name + "]";
-	}	
+	}	*/
 }
